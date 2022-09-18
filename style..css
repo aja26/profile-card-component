@@ -28,10 +28,10 @@ body{
 body::before{
     content:'';
     background-image: url('images/bg-pattern-top.svg');
-    background-position: top left;
+    background-position: -28vw -28vh;
     background-repeat: no-repeat;
-    background-size: 80%;
-    z-index: 1;
+    background-size: 70vw;
+    z-index: -1;
     height: 100vh;
     width: 100vw;
     position: absolute;
@@ -40,19 +40,30 @@ body::before{
 body::after{
     content:'';
     background-image: url('images/bg-pattern-bottom.svg');
-  background-position: 100%;
+    background-position: 60vw 50vh;
     background-repeat: no-repeat;
-    background-size: 40%;
-    z-index: 1;
+    background-size: 70vw;
+    z-index: -1;
     height: 100vh;
     width: 100vw;
     position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .container{
     display: grid;
     justify-content: center;
     align-content: center;
+    height: 100vh;
+}
+
+article{
+    height: 350px;
+    width: 350px;
+    background: #fff;
+    border-radius: 1rem;
+    overflow: hidden;
 }
 
 h1{
